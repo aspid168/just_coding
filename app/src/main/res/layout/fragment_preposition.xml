@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/preposition"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color">
+
+    <TextView
+        android:id="@+id/prepos"
+        android:layout_width="290dp"
+        android:layout_height="66dp"
+        android:gravity="center"
+        android:text="@string/preposition"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <Button
+        android:id="@+id/theory_preposition"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:background="@drawable/button_border"
+        android:layout_marginBottom="168dp"
+        android:text="@string/theory"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="preposition_theory"/>
+
+    <Button
+        android:id="@+id/exercises_preposition"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:text="@string/exercise"
+        android:background="@drawable/button_border"
+        app:layout_constraintBottom_toTopOf="@+id/theory_preposition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prepos"
+        app:layout_constraintVertical_bias="0.695"
+        android:onClick="preposition_practice"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

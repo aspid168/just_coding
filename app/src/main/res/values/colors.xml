@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_color">#ebdfd7</color>
+    <color name="second_color">#824e2e</color>
+    <color name="third_color">#c15151</color>
+    <color name="second_color_for_pager">#FFF</color>
+</resources>

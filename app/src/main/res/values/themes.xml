@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Application" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/main_color</item>
+        <item name="backgroundColor">@color/main_color</item>
+        <item name="colorPrimaryVariant">@color/third_color</item>
+        <item name="android:textColor">@color/second_color</item>
+        <item name="android:textSize">28sp</item>
+        <item name="fontFamily">@font/gilroy_black</item>
+    </style>
+
+    <style name="Theme.Application.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Application.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Application.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
