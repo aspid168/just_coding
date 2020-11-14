@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Practice_end_scr extends AppCompatActivity {
@@ -21,6 +20,7 @@ public class Practice_end_scr extends AppCompatActivity {
         wrong.setText("Не правильно: " + (questions - right_answer));
     }
     public void return_to_main_scr(View view){
+        finish();
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }

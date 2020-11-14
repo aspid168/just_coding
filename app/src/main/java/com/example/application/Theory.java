@@ -1,9 +1,7 @@
 package com.example.application;
 
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.view.View;
 
 import java.util.LinkedList;
 import java.util.List;
