@@ -11,9 +11,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class Theory extends AppCompatActivity {
-    private RecyclerView recyclerView;
-    private List<String> theory = new LinkedList<>();
-    private List<Integer> images = new LinkedList<>();
+    private final List<String> theory = new LinkedList<>();
+    private final List<Integer> images = new LinkedList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +22,7 @@ public class Theory extends AppCompatActivity {
         int element = intent.getIntExtra("element", -1);
         int position = intent.getIntExtra("position", -1);
         setContentView(R.layout.activity_theory);
-        recyclerView = findViewById(R.id.recyclerviewTheory);
+        RecyclerView recyclerView = findViewById(R.id.recyclerviewTheory);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         switch (topic){
             case 0:

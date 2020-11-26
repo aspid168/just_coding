@@ -7,13 +7,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class Practice extends AppCompatActivity {
-    private RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_theory);
-        recyclerView = findViewById(R.id.recyclerviewTheory);
+        RecyclerView recyclerView = findViewById(R.id.recyclerviewTheory);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         Intent intent = getIntent();
         int topic = intent.getIntExtra("topic", -1);

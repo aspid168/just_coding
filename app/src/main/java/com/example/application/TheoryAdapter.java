@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 class TheoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
     private List<String> elements;
     private List<Integer> images;
-    private Boolean state;
+    private final Boolean state;
     private int topic;
     private int pos;
     Context mcontext;

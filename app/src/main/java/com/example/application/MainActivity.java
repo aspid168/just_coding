@@ -10,14 +10,12 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    ViewPager2 viewPager2;
-    PageIndicatorView pageIndicatorView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        viewPager2 = findViewById(R.id.topics);
-        pageIndicatorView = findViewById(R.id.ind);
+        ViewPager2 viewPager2 = findViewById(R.id.topics);
+        PageIndicatorView pageIndicatorView = findViewById(R.id.ind);
         List<Integer> fragm_list = new LinkedList<>();
         fragm_list.add(R.layout.fragment_articles);
         fragm_list.add(R.layout.fragment_preposition);

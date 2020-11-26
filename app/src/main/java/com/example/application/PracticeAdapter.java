@@ -10,12 +10,12 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class PracticeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
-    Boolean state = false;
-    RecyclerView recyclerView;
-    Context mcontext;
-    int question_number;
-    int topic;
-    int right_answers;
+    private Boolean state = false;
+    private final RecyclerView recyclerView;
+    private final Context mcontext;
+    private int question_number;
+    private int topic;
+    private int right_answers;
     PracticeAdapter(RecyclerView recyclerView, Context context, Boolean state, int topic){
         this.recyclerView = recyclerView;
         mcontext = context;

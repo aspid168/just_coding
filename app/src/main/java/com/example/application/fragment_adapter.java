@@ -10,10 +10,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
 public class fragment_adapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
-    private List<Integer> fragment;
-    private ViewPager2 viewPager2;
+    private final List<Integer> fragment;
+    private final ViewPager2 viewPager2;
     private int PAGES = 0;
-    private PageIndicatorView pageIndicatorView;
+    private final PageIndicatorView pageIndicatorView;
 
 
     public fragment_adapter(List<Integer> fragment, ViewPager2 viewPager2, PageIndicatorView pag) {
@@ -22,7 +22,7 @@ public class fragment_adapter extends RecyclerView.Adapter<RecyclerView.ViewHold
         this.pageIndicatorView = pag;
     }
 
-    public class Fragment1ViewHolder extends RecyclerView.ViewHolder{
+    public static class Fragment1ViewHolder extends RecyclerView.ViewHolder{
         public Fragment1ViewHolder(@NonNull View itemView) {
             super(itemView);
 
